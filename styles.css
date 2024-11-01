@@ -48,6 +48,7 @@ header nav button:hover {
     justify-content: space-between;
 }
 
+
 /* Card styling for individual team bios */
 .card {
     background: white;
@@ -59,6 +60,8 @@ header nav button:hover {
     text-align: center;
     transition: transform 0.2s;
 }
+
+
 
 .card:hover {
     transform: scale(1.05);
@@ -87,4 +90,20 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+/* Specific styling for Seeshma's card */
+.seeshma-card {
+    background: #800000;
+    border: 2px solid #d89671;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* Specific styling for Seeshma's profile photo */
+.seeshma-photo {
+    width: 125px; /* Adjust to your desired size */
+    height: 160px; /* Keep aspect ratio the same as width */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 10px;
 }
