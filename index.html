@@ -22,26 +22,56 @@
 
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <<div class="card seeshma-card"> <!-- Add 'seeshma-card' class here -->
+    <!-- Card for Seeshma -->
+    <div class="card seeshma-card">
         <h2>Seeshma Babu 🌱</h2>
         <p class="subtitle">Front-End Dev</p>
-        <!-- Profile photo with specific class for Seeshma's image styling -->
-        <img src="img/zootedSeeshma.jpg" alt="Seeshma Babu" class="profile-photo seeshma-photo"> <!-- Add 'seeshma-photo' class here -->
-        <button onclick="toggleBio('bio1')" class="bio-button">Show Bio</button>
-        <p id="bio1" class="bio">Seeshma is a passionate cybersecurity student who stays up-to-date with the latest tech advancements and cybersecurity trends. She enjoys watching scam-busting videos and exploring how AI is being used in modern fraud schemes.</p>
+
+        <!-- Container for profile photo and button -->
+        <div class="profile-container">
+            <img src="img/zootedSeeshma.jpg" alt="Seeshma Babu" class="profile-photo seeshma-photo">
+            <button onclick="toggleBio('bio1')" class="bio-button">Show Bio</button>
+        </div>
+
+        <!-- Bio -->
+        <p id="bio1" class="bio">
+            Seeshma is a passionate cybersecurity student who stays up-to-date with the latest tech advancements and cybersecurity trends. She enjoys watching scam-busting videos and exploring how AI is being used in modern fraud schemes.
+        </p>
+
+        <!-- Moodboard -->
+        <div class="moodboard">
+            <h3>~My Inspos~</h3>
+            <div class="moodboard-items">
+                <!-- Image items for tools and inspirations -->
+                <img src="img/john.jpg" alt="JohnRipper Logo" title="John the Ripper - Password Cracking Tool">
+                <img src="img/crowdstrikeMeme.jpg" alt="Crowdstrike Logo" title="Meme">
+                <img src="img/lain.jpg" alt="Lain Icon" title="Serial Experiments Lain (TV Mini Series 1988)">
+            </div>
+
+            <!-- Links -->
+            <div class="moodboard-links">
+                <a href="https://github.com/seeshma-b" target="_blank" class="moodboard-link">GitHub Profile</a> |
+                <a href="https://www.uncc.edu/" target="_blank" class="moodboard-link">UNCC Home Page</a>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- Card for Yosvel -->
     <div class="card">
         <h2>Yosvel Baez</h2>
         <p>Backend Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
+        <p id="bio2" class="bio">Yosvel is a backend developer specializing in server-side logic and database management.</p>
     </div>
+
+    <!-- Card for TJ -->
     <div class="card">
         <h2>TJ Gaither</h2>
         <p>UI/UX Designer</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <p id="bio3" class="bio">TJ is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
     </div>
 </div>
 

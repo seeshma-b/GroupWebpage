@@ -46,6 +46,7 @@ header nav button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 
@@ -75,7 +76,7 @@ h2 {
 .bio {
     display: none;
     margin-top: 10px;
-    color: #555;
+    color: #000000;
 }
 
 /* Button styling */
@@ -86,6 +87,7 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 button:hover {
@@ -95,15 +97,68 @@ button:hover {
 /* Specific styling for Seeshma's card */
 .seeshma-card {
     background: #800000;
-    border: 2px solid #d89671;
+    border: 8px solid #d89671;
     border-radius: 20px;
     padding: 30px;
 }
 
 /* Specific styling for Seeshma's profile photo */
 .seeshma-photo {
-    width: 125px; /* Adjust to your desired size */
-    height: 160px; /* Keep aspect ratio the same as width */
+    width: 125px;
+    height: 160px;
     border-radius: 10px; /* Rounded corners */
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+/* Profile container to stack image and button vertically */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns the items within the container */
+    gap: 10px; /* Adds space between the image and button */
+}
+
+/* Moodboard styling for Seeshma's card */
+.moodboard {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffd6ad;
+    border: 2px solid #3b2e1e;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.moodboard h3 {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Styling for moodboard images */
+.moodboard-items img {
+    width: 100px; /* Smaller size for a compact moodboard */
+    height: 100px;
+    margin: 5px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.moodboard-items img:hover {
+    transform: scale(3.0); /* Enlarges image slightly on hover */
+}
+
+/* Styling for moodboard links */
+.moodboard-link {
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.moodboard-link:hover {
+    text-decoration: underline;
 }
