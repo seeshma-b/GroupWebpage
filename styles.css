@@ -63,7 +63,6 @@ header nav button:hover {
 }
 
 
-
 .card:hover {
     transform: scale(1.05);
 }
@@ -93,6 +92,47 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* Styling for Mission Statement Section */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#vision h2, #vision h3 {
+    color: #333366;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.mission-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.values-list, .rules-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+.values-list li, .rules-list li {
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.values-list li strong, .rules-list li strong {
+    color: #0056b3; /* Accent color for key terms */
+}
+
 
 /* Specific styling for Seeshma's card */
 .seeshma-card {
