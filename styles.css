@@ -167,7 +167,77 @@ button:hover {
     border-radius: 8px;
     text-align: center;
 }
+/* Moodboard for Yos*/
+.yos-card {
+    background: rgba(94, 131, 94, 0.93);
+    border: 8px solid #533d2f;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.yos-photo{
+    width: 125px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 3px solid #000000;
+}
+.yos-moodboard {
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgba(158, 86, 86, 0.86);
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
 
+}
+.yos-moodboard-link {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.yos-moodboard-link:hover {
+    text-decoration: underline;
+}
+.carousel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    min-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+        right: 10px;
+}
 .moodboard h3 {
     font-size: 20px;
     color: #000000;

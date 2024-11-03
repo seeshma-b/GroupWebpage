@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,11 +60,39 @@
 
 
     <!-- Card for Yosvel -->
-    <div class="card">
-        <h2>Yosvel Baez</h2>
+    <div class="yos-card">
+        <h2>Yosvel Baez &#129446</h2>
         <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Yosvel is a backend developer specializing in server-side logic and database management.</p>
+
+
+          <!-- Container for profile photo and button -->
+        <div class="yos-profile-container">
+            <img src="img/yosPic.jpg" alt="Yosvel Baez" class="profile-photo yos-photo">
+             <!-- Links -->
+            <div class="yos-moodboard-links">
+                <a href="https://github.com/Yokdal" target="_blank" class="yos-moodboard-link">GitHub Profile</a>
+            </div>
+            <button onclick="toggleBio('bio2')" class="bio-button">Show Bio</button>
+            <p id="bio2" class="bio">Yosvel is a motivated cybersecurity student who is immersed in learning the latest industry practices, and super eager to bring his skills to corporate enviornments.</p>
+        </div>
+
+        <!-- Yos's MoodBoard -->
+        <div class="yos-moodboard">
+            <h3>&#128150 Slice of my Life &#128150</h3>
+              <!-- Carousel Container -->
+        <div class="carousel">
+        <div class="carousel-track">
+            <img src="img/travel.jpg" alt="Yos Wandering" title="Yos wandering in Spain">
+            <img src="img/magic.jpg" alt="Magic Card" title="MTG">
+            <img src="img/hobby.JPG" alt="Swen Fish" title="First attempt of making stuffed fish">
+            <img src="img/wizardbros.jpg" alt="Bestie and Me" title="Wizards are sick">
+        </div>
+
+        <!-- Carousel Navigation Buttons -->
+        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</div>
     </div>
 
     <!-- Card for TJ -->
