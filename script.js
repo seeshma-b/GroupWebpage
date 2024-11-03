@@ -31,3 +31,12 @@ function showSection(sectionId) {
         visionSection.style.display = "block";
     }
 }
+    let currentSlide = 0;
+
+    function moveSlide(direction) {
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-track img');
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        const offset = -currentSlide * 100;
+        track.style.transform = `translateX(${offset}%)`;
+    }
