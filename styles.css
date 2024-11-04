@@ -142,6 +142,7 @@ button:hover {
     border: 8px solid #d89671;
     border-radius: 20px;
     padding: 30px;
+    width: 350px;
 }
 
 /* Specific styling for Seeshma's profile photo */
