@@ -19,7 +19,7 @@
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
-</header>
+</header>D
 
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
@@ -80,27 +80,49 @@
         <div class="yos-moodboard">
             <h3>&#128150 Slice of my Life &#128150</h3>
               <!-- Carousel Container -->
-        <div class="carousel">
-        <div class="carousel-track">
-            <img src="img/travel.jpg" alt="Yos Wandering" title="Yos wandering in Spain">
-            <img src="img/magic.jpg" alt="Magic Card" title="MTG">
-            <img src="img/hobby.JPG" alt="Swen Fish" title="First attempt of making stuffed fish">
-            <img src="img/wizardbros.jpg" alt="Bestie and Me" title="Wizards are sick">
-        </div>
+            <div class="carousel">
+            <div class="carousel-track">
+                <img src="img/travel.jpg" alt="Yos Wandering" title="Yos wandering in Spain">
+                <img src="img/magic.jpg" alt="Magic Card" title="MTG">
+                <img src="img/hobby.JPG" alt="Swen Fish" title="First attempt of making stuffed fish">
+                <img src="img/wizardbros.jpg" alt="Bestie and Me" title="Wizards are sick">
+            </div>
 
-        <!-- Carousel Navigation Buttons -->
-        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-</div>
+            <!-- Carousel Navigation Buttons -->
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
     </div>
 
     <!-- Card for TJ -->
-    <div class="card">
-        <h2>TJ Gaither</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">TJ is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    <div class="tj-card">
+        <h2 class="tj-h2">TJ Gaither &#128012;</h2>
+        <p class="tj-p">UI/UX Designer</p>
+
+         <div class="tj-profile-container">
+            <img src="img/tj_pfp_image.jpg" alt="TJ Gaither" class="profile-photo tj-photo">
+             <!-- Links -->
+            <div class="tj-moodboard-links">
+                <a href="https://github.com/Tim-Tim-Tim" target="_blank" class="tj-moodboard-link">GitHub Profile</a>
+            </div>
+            <button onclick="toggleBio('bio3')">Show Bio</button>
+            <p id="bio3" class="tj-p">TJ is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        </div>
+
+        <div class="tj-moodboard">
+            <h3 style="color: yellow;">(Click the images)</h3>
+            <!-- Carousel Container -->
+            <div class="tj-carousel">
+                <div class="tj-carousel-track">
+                    <img src="img/tj_berserk.png" alt="TJ's Favorite Manga" title="Berserk">
+                    <img src="img/tj_gundam.jpg" alt="TJ's favorite show" title="Gundam">
+                    <img src="img/tj_elden_ring.png" alt="TJ's favorite video game" title="Elden Ring">
+                    <img src="img/tj_noridc_tat.png" alt="TJ's favorite tattoo style" title="Nordic Tattoo">
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

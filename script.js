@@ -40,3 +40,23 @@ function showSection(sectionId) {
         const offset = -currentSlide * 100;
         track.style.transform = `translateX(${offset}%)`;
     }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".tj-carousel-track img");
+    let currentIndex = 0;
+
+    // Set the first image as visible initially
+    images[currentIndex].classList.add("active");
+
+    // Add click event to fade to the next image
+    images.forEach((img) => {
+        img.addEventListener("click", () => {
+            images[currentIndex].classList.remove("active");
+
+            // Move to the next image, loop back to the start if at the end
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].classList.add("active");
+        });
+    });
+});

@@ -67,6 +67,7 @@ header nav button:hover {
     transform: scale(1.05);
 }
 
+
 h2 {
     margin: 0 0 10px;
 }
@@ -86,7 +87,8 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
@@ -271,4 +273,95 @@ button:hover {
 
 .moodboard-link:hover {
     text-decoration: underline;
+}
+
+.tj-photo {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 3px solid #000000;
+}
+
+.tj-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0A00E8;
+    border: 8px solid #02006c;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 300px;
+}
+
+.tj-moodboard-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.tj-h2 {
+    color: white;
+    margin: 0 0 10px;
+}
+
+.tj-p {
+    color: white;
+}
+
+.tj-moodboard-link:hover {
+    text-decoration: underline;
+}
+
+.tj-card:hover {
+    transform: scale(1.05);
+}
+
+.tj-moodboard {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    background-color: rgba(50, 86, 86, 0.86);
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.tj-carousel {
+    display: flex;
+    justify-content: center;
+    width: 300px; /* Set a fixed width */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tj-carousel-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.tj-carousel-track img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+.tj-carousel-track img.active {
+    opacity: 1;
 }
